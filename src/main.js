@@ -28,7 +28,7 @@ import {
   // and remove transofrm property
   const source = createMediaStreamSource(
     mediaStream, {
-    transform: Transform2D.MirrorX,
+   // transform: Transform2D.MirrorX,
     cameraType: 'back'
   }
   );
