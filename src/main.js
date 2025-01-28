@@ -18,12 +18,9 @@ import {
   // Replace the `canvas` element with the live output from the CameraKit session.
   document.getElementById('canvas').replaceWith(session.output.live);
 
-  // Load the specified lens group.
-  const lens = await cameraKit.lensRepository.loadLens('f7c4c5d3-9d1f-481c-9348-f80aeab69673','daa500ca-e430-4c9b-b6f8-ad1d8643fdf9');
+  
 
-
-  // Get the user's media stream.
-  // for back camera use { facingMode: "environment" } instead of { facingMode: "user" }
+  // Apply the first lens in the lens group to the CameraKit session.
   let mediaStream = await navigator.mediaDevices.getUserMedia({
     video: { facingMode: "environment" },
   });
@@ -46,4 +43,7 @@ import {
 
   // Start the CameraKit session.
   session.play();
+
+  const lens = await cameraKit.lensRepository.loadLens('f7c4c5d3-9d1f-481c-9348-f80aeab69673','daa500ca-e430-4c9b-b6f8-ad1d8643fdf9');
+ await session.applyLens(lens);
 })();
