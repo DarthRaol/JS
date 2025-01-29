@@ -9,7 +9,7 @@ import {
 (async function () {
   // Bootstrap Camera Kit using your API token.
   const cameraKit = await bootstrapCameraKit({
-    apiToken: 'eyJhbGciOiJIUzI1NiIsImtpZCI6IkNhbnZhc1MyU0hNQUNQcm9kIiwidHlwIjoiSldUIn0.eyJhdWQiOiJjYW52YXMtY2FudmFzYXBpIiwiaXNzIjoiY2FudmFzLXMyc3Rva2VuIiwibmJmIjoxNzM4MDYxMzI5LCJzdWIiOiJmMjIyZmZkMy1jZmM5LTQyNDYtYmNkZi1jZjE0YjVhN2U1NDB-U1RBR0lOR35iZGMzYTVkZi03NzYwLTQwNjEtYWIyOS1kYjRiNjFmYjkyNDIifQ.b5BvJlt0PJ74NR1tC8IvCLSE22biv8gBA4FpiHRJ9mU'
+    apiToken: 'eyJhbGciOiJIUzI1NiIsImtpZCI6IkNhbnZhc1MyU0hNQUNQcm9kIiwidHlwIjoiSldUIn0.eyJhdWQiOiJjYW52YXMtY2FudmFzYXBpIiwiaXNzIjoiY2FudmFzLXMyc3Rva2VuIiwibmJmIjoxNzM4MTc1MjUwLCJzdWIiOiIxYWU1NGE3Yi04ZDVhLTQ1YjYtOWMyMS0xMzU4YzQ0ZmIyYjN-U1RBR0lOR34wMDlmOTQ2Ni0zMGM5LTQzMzEtYjI0YS00NzFhNmZiNjJjMTMifQ.2B874RTDZOGERn6aEOJR9yYdBFTIrv8xygGAWLpn2CUnpm'
   });
 
   // Create a new CameraKit session.
@@ -42,6 +42,6 @@ import {
   // Start the CameraKit session.
   session.play();
 
-  const lens = await cameraKit.lensRepository.loadLens('f7c4c5d3-9d1f-481c-9348-f80aeab69673', 'daa500ca-e430-4c9b-b6f8-ad1d8643fdf9');
+  const lens = await cameraKit.lensRepository.loadLens('73f3b4cb-55f8-4f6d-a47d-647ff5090db4');
   await session.applyLens(lens);
 })();
