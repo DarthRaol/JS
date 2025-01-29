@@ -9,7 +9,7 @@ import {
 (async function () {
   // Bootstrap Camera Kit using your API token.
   const cameraKit = await bootstrapCameraKit({
-    apiToken: 'eyJhbGciOiJIUzI1NiIsImtpZCI6IkNhbnZhc1MyU0hNQUNQcm9kIiwidHlwIjoiSldUIn0.eyJhdWQiOiJjYW52YXMtY2FudmFzYXBpIiwiaXNzIjoiY2FudmFzLXMyc3Rva2VuIiwibmJmIjoxNzM4MTc1MjUwLCJzdWIiOiIxYWU1NGE3Yi04ZDVhLTQ1YjYtOWMyMS0xMzU4YzQ0ZmIyYjN-U1RBR0lOR34wMDlmOTQ2Ni0zMGM5LTQzMzEtYjI0YS00NzFhNmZiNjJjMTMifQ.2B874RTDZOGERn6aEOJR9yYdBFTIrv8xygGAWLpn2CUnpm'
+    apiToken: 'eyJhbGciOiJIUzI1NiIsImtpZCI6IkNhbnZhc1MyU0hNQUNQcm9kIiwidHlwIjoiSldUIn0.eyJhdWQiOiJjYW52YXMtY2FudmFzYXBpIiwiaXNzIjoiY2FudmFzLXMyc3Rva2VuIiwibmJmIjoxNzM4MTgyNDgzLCJzdWIiOiIwOWI2MjMyNy1lMGI5LTQ5NGYtYmYxNC0zZmUzNWYzYzVkNzF-U1RBR0lOR345MTY5MDdjNy1iNmExLTQ2ZjAtYTU1My1kZjczZDlkZDM3YjYifQ.ecVDtM5HCBvKRWwSYroITuyQrqOkYVgTStBsiaHMxCc'
   });
 
   // Create a new CameraKit session.
@@ -45,3 +45,14 @@ import {
   const lens = await cameraKit.lensRepository.loadLens('73f3b4cb-55f8-4f6d-a47d-647ff5090db4');
   await session.applyLens(lens);
 })();
+
+
+
+setTimeout(() => {
+  let displayElement = document.getElementById("blocker");
+  displayElement.style.display = "inline";
+
+  displayElement.onclick = function() {
+    window.open("https://www.google.com", "_blank"); // Opens link in a new tab
+};
+}, 10000); // 10000ms = 10 seconds
