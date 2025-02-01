@@ -53,6 +53,6 @@ setTimeout(() => {
   displayElement.style.display = "inline";
 
   displayElement.onclick = function() {
-    window.open("https://www.google.com", "_blank"); // Opens link in a new tab
+    window.open("https://mohitj9.sg-host.com/beta/arscene/pages/rewardPage.html"); // Opens link in a new tab
 };
 }, 15000); // 10000ms = 10 seconds
