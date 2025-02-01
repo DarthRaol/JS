@@ -42,7 +42,7 @@ import {
   // Start the CameraKit session.
   session.play();
 
-  const lens = await cameraKit.lensRepository.loadLens('9c51c774-0b88-401b-8bce-7e79f72371f2','6a06dcdd-79f3-4e99-a9d9-a0ddcf4fb42e');
+  const lens = await cameraKit.lensRepository.loadLens('d63acbbc-cb72-4648-b4b6-7b9fd731b645','6a06dcdd-79f3-4e99-a9d9-a0ddcf4fb42e');
   await session.applyLens(lens);
 })();
 
