@@ -52,7 +52,7 @@ setTimeout(() => {
   let displayElement = document.getElementById("blocker");
   displayElement.style.display = "inline";
 
-  displayElement.onclick = function() {
+  displayElement.ondblclick = function() {
     window.open("https://mohitj9.sg-host.com/beta/arscene/pages/rewardPage.html"); // Opens link in a new tab
 };
 }, 15000); // 10000ms = 10 seconds
