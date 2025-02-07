@@ -47,6 +47,21 @@ import {
 })();
 
 
+let doOnce = true;
+document.body.onclick = function() {
+  if(doOnce){
+
+
+  const audioSource = document.getElementById("AudioSource");
+  audioSource.src = "../src/lookaround.wav";
+  console.log("Playing");
+  audioSource.load();
+  audioSource.play();
+  doOnce = false;
+}
+};
+
+
 
 setTimeout(() => {
   let displayElement = document.getElementById("blocker");
