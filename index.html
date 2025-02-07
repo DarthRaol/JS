@@ -15,6 +15,20 @@
     <canvas id="canvas"></canvas>
     <div id="blocker" class="blocker"></div>
     <script type="module" src="/src/main.js"></script>
+    <script>
+      let doOnce = true;
+      document.body.onclick = function() {
+        if(doOnce){
 
+
+        const audioSource = document.getElementById("AudioSource");
+        audioSource.src = "../src/lookaround.wav";
+        console.log("Playing");
+        audioSource.load();
+        audioSource.play();
+        doOnce = false;
+      }
+    };
+    </script>
   </body>
 </html>
