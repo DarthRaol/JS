@@ -8,8 +8,18 @@
     <title>Vite App</title>
   </head>
   <body>
+    <audio id="AudioSource">
+      <source src="../src/lookaround.wav" type="audio/wav">
+      Your browser does not support the audio element.
+    </audio>
     <canvas id="canvas"></canvas>
     <div id="blocker" class="blocker"></div>
     <script type="module" src="/src/main.js"></script>
+    <script>
+      const audioSource = document.getElementById("AudioSource");
+      audioSource.src = "../src/lookaround.wav";
+      audioSource.load();
+      audioSource.play();
+    </script>
   </body>
 </html>
