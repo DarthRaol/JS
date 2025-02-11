@@ -56,6 +56,6 @@ setTimeout(() => {
   displayElement.style.display = "inline";
 
   displayElement.ondblclick = function() {
-    window.open("https://mohitj9.sg-host.com/beta/arscene/pages/rewardPage.php"); // Opens link in a new tab
+      window.open("https://experience.arks.club/pages/rewardPage.php"); // Opens link in a new tab
 };
 }, 15000); // 10000ms = 10 seconds
